@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c22153ea94c05cf479319156c37308ea
+guid: 7f33f0b7f458d674d9bd2327b39a7781
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,211 +123,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_0
+      name: Player Hurt 48x48_0
       rect:
         serializedVersion: 2
-        x: 11
+        x: 7
         y: 8
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e615fd643ad925b4f9797cadf0ddec84
-      internalID: 928070105
+      spriteID: 9ccdecbf4d9397c4a86c3da8cf0520d9
+      internalID: 2039098567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_1
+      name: Player Hurt 48x48_1
       rect:
         serializedVersion: 2
-        x: 59
+        x: 55
         y: 8
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9989c88fde4886e4fa90aad53c455166
-      internalID: -1796718408
+      spriteID: 0e1c9d8c4f8ad5b4290ca85f3eace6f9
+      internalID: 1314474493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_2
+      name: Player Hurt 48x48_2
       rect:
         serializedVersion: 2
-        x: 107
+        x: 102
         y: 8
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf0a91b16256caa42be53006edd2d0dd
-      internalID: -2082259627
+      spriteID: 587cb4330ac8cb24cbfe04b89c71e3fe
+      internalID: 756084820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_3
+      name: Player Hurt 48x48_3
       rect:
         serializedVersion: 2
-        x: 155
+        x: 152
         y: 8
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd17604f00afd7b448937416a17966e2
-      internalID: -29161551
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_4
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 8
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b7835e81a89ab3439332fb60b2e2410
-      internalID: -1398427783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_5
-      rect:
-        serializedVersion: 2
-        x: 251
-        y: 8
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6f743387934d4a48838973a9c68e7f0
-      internalID: 1368487833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_6
-      rect:
-        serializedVersion: 2
-        x: 299
-        y: 8
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f09a4b71e89e3364bba648ef2e0916e0
-      internalID: 1606538184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_7
-      rect:
-        serializedVersion: 2
-        x: 347
-        y: 7
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cf4b4fa7a08342a448b57cc6dfde5fb6
-      internalID: 283773439
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_8
-      rect:
-        serializedVersion: 2
-        x: 395
-        y: 8
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f49c0342bd6395458d4fa5b9e5559f0
-      internalID: 282580499
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_9
-      rect:
-        serializedVersion: 2
-        x: 443
-        y: 8
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12ee1ca110c52a7498f368cdee718999
-      internalID: 1970662751
+      spriteID: 35c90373b6a6ba049a21e573cae56578
+      internalID: -1621748243
       vertices: []
       indices: 
       edges: []
@@ -343,16 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player Crouch-Idle 48x48_0: 928070105
-      Player Crouch-Idle 48x48_1: -1796718408
-      Player Crouch-Idle 48x48_2: -2082259627
-      Player Crouch-Idle 48x48_3: -29161551
-      Player Crouch-Idle 48x48_4: -1398427783
-      Player Crouch-Idle 48x48_5: 1368487833
-      Player Crouch-Idle 48x48_6: 1606538184
-      Player Crouch-Idle 48x48_7: 283773439
-      Player Crouch-Idle 48x48_8: 282580499
-      Player Crouch-Idle 48x48_9: 1970662751
+      Player Hurt 48x48_0: 2039098567
+      Player Hurt 48x48_1: 1314474493
+      Player Hurt 48x48_2: 756084820
+      Player Hurt 48x48_3: -1621748243
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

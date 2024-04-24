@@ -126,9 +126,9 @@ TextureImporter:
       name: player wall slide 48x48_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 7
         y: 3
-        width: 18
+        width: 30
         height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -137,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 090beb122f69d994f96762bc74cc52fe
-      internalID: 2053321126
+      spriteID: bfa646c5435912646a230caa1ea19129
+      internalID: -1360313868
       vertices: []
       indices: 
       edges: []
@@ -147,9 +147,9 @@ TextureImporter:
       name: player wall slide 48x48_1
       rect:
         serializedVersion: 2
-        x: 60
+        x: 55
         y: 3
-        width: 18
+        width: 30
         height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -158,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38eb1173b6803874a870215c2d44eba9
-      internalID: -1110426996
+      spriteID: a8125ab1b285ae441bca4363c633d801
+      internalID: 462860984
       vertices: []
       indices: 
       edges: []
@@ -168,9 +168,9 @@ TextureImporter:
       name: player wall slide 48x48_2
       rect:
         serializedVersion: 2
-        x: 108
+        x: 103
         y: 3
-        width: 18
+        width: 30
         height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 720016f25af536a4483ed9d400d0f8aa
-      internalID: -1261947430
+      spriteID: 7c901a39caf47834ea276e5b4f5a5438
+      internalID: -1745648171
       vertices: []
       indices: 
       edges: []
@@ -196,9 +196,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player wall slide 48x48_0: 2053321126
-      player wall slide 48x48_1: -1110426996
-      player wall slide 48x48_2: -1261947430
+      player wall slide 48x48_0: -1360313868
+      player wall slide 48x48_1: 462860984
+      player wall slide 48x48_2: -1745648171
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

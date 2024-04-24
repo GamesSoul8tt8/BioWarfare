@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c22153ea94c05cf479319156c37308ea
+guid: 3aa511997cc4eed42b1f9e218332f01a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,211 +123,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_0
+      name: Player Death 64x64_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 8
+        x: 16
+        y: 16
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e615fd643ad925b4f9797cadf0ddec84
-      internalID: 928070105
+      spriteID: 54945052778801b49b56b5ebfb5665fd
+      internalID: -783456092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_1
+      name: Player Death 64x64_1
       rect:
         serializedVersion: 2
-        x: 59
-        y: 8
+        x: 82
+        y: 16
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9989c88fde4886e4fa90aad53c455166
-      internalID: -1796718408
+      spriteID: a49fc618a6c05e44798793ca86b2a06e
+      internalID: 1584735355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_2
+      name: Player Death 64x64_2
       rect:
         serializedVersion: 2
-        x: 107
-        y: 8
+        x: 146
+        y: 16
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf0a91b16256caa42be53006edd2d0dd
-      internalID: -2082259627
+      spriteID: 197191f0423084d4c90b1d91a7be2888
+      internalID: 1625414559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_3
+      name: Player Death 64x64_3
       rect:
         serializedVersion: 2
-        x: 155
-        y: 8
+        x: 211
+        y: 16
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd17604f00afd7b448937416a17966e2
-      internalID: -29161551
+      spriteID: 780c57bd309f884488cf274e7086df7d
+      internalID: -530917321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_4
+      name: Player Death 64x64_4
       rect:
         serializedVersion: 2
-        x: 203
-        y: 8
+        x: 275
+        y: 16
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b7835e81a89ab3439332fb60b2e2410
-      internalID: -1398427783
+      spriteID: 8bd4b5d9a3549324689479bd24cc29e6
+      internalID: 864110350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_5
+      name: Player Death 64x64_5
       rect:
         serializedVersion: 2
-        x: 251
-        y: 8
+        x: 339
+        y: 16
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6f743387934d4a48838973a9c68e7f0
-      internalID: 1368487833
+      spriteID: b041ff63b79e070428dc27adf7362c90
+      internalID: 2141834065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_6
+      name: Player Death 64x64_6
       rect:
         serializedVersion: 2
-        x: 299
-        y: 8
+        x: 409
+        y: 16
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f09a4b71e89e3364bba648ef2e0916e0
-      internalID: 1606538184
+      spriteID: 4ac3af4c3a4d32c498cd364a719a2d7c
+      internalID: -364107891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_7
+      name: Player Death 64x64_7
       rect:
         serializedVersion: 2
-        x: 347
-        y: 7
+        x: 474
+        y: 16
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf4b4fa7a08342a448b57cc6dfde5fb6
-      internalID: 283773439
+      spriteID: 013b4b33b19f80248af054e747499acd
+      internalID: 1045520079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_8
+      name: Player Death 64x64_8
       rect:
         serializedVersion: 2
-        x: 395
-        y: 8
+        x: 538
+        y: 16
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f49c0342bd6395458d4fa5b9e5559f0
-      internalID: 282580499
+      spriteID: c8bd6f61c78520544965531412d92fe5
+      internalID: 324088005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Crouch-Idle 48x48_9
+      name: Player Death 64x64_9
       rect:
         serializedVersion: 2
-        x: 443
-        y: 8
+        x: 602
+        y: 16
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12ee1ca110c52a7498f368cdee718999
-      internalID: 1970662751
+      spriteID: b09393892b6a303449816133e34614f6
+      internalID: 2059487127
       vertices: []
       indices: 
       edges: []
@@ -343,16 +343,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player Crouch-Idle 48x48_0: 928070105
-      Player Crouch-Idle 48x48_1: -1796718408
-      Player Crouch-Idle 48x48_2: -2082259627
-      Player Crouch-Idle 48x48_3: -29161551
-      Player Crouch-Idle 48x48_4: -1398427783
-      Player Crouch-Idle 48x48_5: 1368487833
-      Player Crouch-Idle 48x48_6: 1606538184
-      Player Crouch-Idle 48x48_7: 283773439
-      Player Crouch-Idle 48x48_8: 282580499
-      Player Crouch-Idle 48x48_9: 1970662751
+      Player Death 64x64_0: -783456092
+      Player Death 64x64_1: 1584735355
+      Player Death 64x64_2: 1625414559
+      Player Death 64x64_3: -530917321
+      Player Death 64x64_4: 864110350
+      Player Death 64x64_5: 2141834065
+      Player Death 64x64_6: -364107891
+      Player Death 64x64_7: 1045520079
+      Player Death 64x64_8: 324088005
+      Player Death 64x64_9: 2059487127
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

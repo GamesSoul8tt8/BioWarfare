@@ -123,111 +123,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player Slide 48x48_1
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 8
-        width: 37
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44db5a1335468664992f6b2e2fbdacd3
-      internalID: 1590185352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Slide 48x48_3
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 8
-        width: 37
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cfeb1607209b2484e9c6e2107d7ad9bc
-      internalID: -643116001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Slide 48x48_4
-      rect:
-        serializedVersion: 2
-        x: 195
-        y: 8
-        width: 37
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29489e09c676f74468826f9cf01addf2
-      internalID: 3665191
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Slide 48x48_5
-      rect:
-        serializedVersion: 2
-        x: 242
-        y: 8
-        width: 37
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86ab07d56317b6541b61a30ac90e343a
-      internalID: 691641591
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Slide 48x48_6
-      rect:
-        serializedVersion: 2
-        x: 290
-        y: 8
-        width: 37
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 52b0ca0fa6c650246ad290797b0a2c4b
-      internalID: -1084780894
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Player Slide 48x48_0
       rect:
         serializedVersion: 2
@@ -242,8 +137,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccbc18d6cc6c70e41a8ce15d7ded1daa
-      internalID: 1928506218
+      spriteID: 6cccc5e6e027a8c4d92bef5e30b0873d
+      internalID: 1532127610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Slide 48x48_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 8
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2c66bb495841942ba9393f968e8c25
+      internalID: 1816732555
       vertices: []
       indices: 
       edges: []
@@ -263,8 +179,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5b5cf6263c28174a8c76e4335b9788f
-      internalID: 580720417
+      spriteID: 5aa9a0f528a194f46883f3315d74dc06
+      internalID: -9087400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Slide 48x48_3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 8
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcad6afb0779c8478a6b199277a4d13
+      internalID: -1455308733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Slide 48x48_4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 8
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e603f0e9a07f74bae37c651e167190
+      internalID: -443303493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Slide 48x48_5
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 8
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac997fa660075544c91a3e09400b7c89
+      internalID: -1797079604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Slide 48x48_6
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 8
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225ba3739d018894caaa29b061c9ea0b
+      internalID: -582254919
       vertices: []
       indices: 
       edges: []
@@ -284,8 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a387842bd7519aa4a8fd78e656736e08
-      internalID: 1882648656
+      spriteID: 21c12145039781a488ceeafa1dd1a523
+      internalID: -742281469
       vertices: []
       indices: 
       edges: []
@@ -301,14 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player Slide 48x48_0: 1928506218
-      Player Slide 48x48_1: 1590185352
-      Player Slide 48x48_2: 580720417
-      Player Slide 48x48_3: -643116001
-      Player Slide 48x48_4: 3665191
-      Player Slide 48x48_5: 691641591
-      Player Slide 48x48_6: -1084780894
-      Player Slide 48x48_7: 1882648656
+      Player Slide 48x48_0: 1532127610
+      Player Slide 48x48_1: 1816732555
+      Player Slide 48x48_2: -9087400
+      Player Slide 48x48_3: -1455308733
+      Player Slide 48x48_4: -443303493
+      Player Slide 48x48_5: -1797079604
+      Player Slide 48x48_6: -582254919
+      Player Slide 48x48_7: -742281469
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

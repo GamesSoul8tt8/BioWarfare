@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1b865e43696cf9d43b2243ebded7addc
+guid: bf54af0006c5f994fa6de9b9745e9254
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,148 +123,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player Punch Cross 64x64_1
+      name: player land 48x48_0
       rect:
         serializedVersion: 2
-        x: 87
-        y: 16
-        width: 41
-        height: 29
+        x: 9
+        y: 8
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79fd9f79ebc35f84ca17c2c516bdd48c
-      internalID: -1791967880
+      spriteID: 8387592a9d04b384cbe10d430f243005
+      internalID: -1938832883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Punch Cross 64x64_3
+      name: player land 48x48_1
       rect:
         serializedVersion: 2
-        x: 215
-        y: 16
-        width: 41
-        height: 29
+        x: 57
+        y: 8
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5508cbd836f7e4d479112afa54eabb6e
-      internalID: -648831428
+      spriteID: 369bd45c0e92fbd44b37143150ed9971
+      internalID: 1356915270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Punch Cross 64x64_4
+      name: player land 48x48_2
       rect:
         serializedVersion: 2
-        x: 273
-        y: 16
-        width: 41
-        height: 29
+        x: 105
+        y: 8
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfeeee6c1594acc44be70dc56bf36df9
-      internalID: -551065332
+      spriteID: f80273550a7e6ab4cbea5a8bc567f566
+      internalID: 46115363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Punch Cross 64x64_0
+      name: player land 48x48_3
       rect:
         serializedVersion: 2
-        x: 8
-        y: 16
-        width: 41
-        height: 29
+        x: 153
+        y: 8
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b46d1cbde3b21c47b07a2acdd0ed603
-      internalID: -1540724031
+      spriteID: 98fa22158487bc9428e7764c25899e3a
+      internalID: -717282163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Punch Cross 64x64_2
+      name: player land 48x48_4
       rect:
         serializedVersion: 2
-        x: 155
-        y: 16
-        width: 41
-        height: 29
+        x: 201
+        y: 8
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27e323f5da7f77d4f9762d2ae4604d73
-      internalID: 1035690138
+      spriteID: 9fe20097b4a77eb498b7da74ada752dc
+      internalID: 736672201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Punch Cross 64x64_5
+      name: player land 48x48_5
       rect:
         serializedVersion: 2
-        x: 327
-        y: 16
-        width: 41
-        height: 29
+        x: 249
+        y: 8
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46111918bbdf22948982df3cd87604d9
-      internalID: -1516864846
+      spriteID: 7e6006194c69013478700fce3903acf8
+      internalID: -1655315209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Punch Cross 64x64_6
+      name: player land 48x48_6
       rect:
         serializedVersion: 2
-        x: 391
-        y: 16
-        width: 41
-        height: 29
+        x: 297
+        y: 8
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee6e5c618d7b75e43a5108434974b432
-      internalID: 1593619397
+      spriteID: 53b724b2ef7a03348945a765b70c6b03
+      internalID: 1681088292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player land 48x48_7
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 8
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa88b962d88c22b4894a932bb9fb6fe3
+      internalID: -843062355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player land 48x48_8
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 8
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96230efc586149b458825f4113930bc2
+      internalID: -1092465632
       vertices: []
       indices: 
       edges: []
@@ -280,13 +322,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player Punch Cross 64x64_0: -1540724031
-      Player Punch Cross 64x64_1: -1791967880
-      Player Punch Cross 64x64_2: 1035690138
-      Player Punch Cross 64x64_3: -648831428
-      Player Punch Cross 64x64_4: -551065332
-      Player Punch Cross 64x64_5: -1516864846
-      Player Punch Cross 64x64_6: 1593619397
+      player land 48x48_0: -1938832883
+      player land 48x48_1: 1356915270
+      player land 48x48_2: 46115363
+      player land 48x48_3: -717282163
+      player land 48x48_4: 736672201
+      player land 48x48_5: -1655315209
+      player land 48x48_6: 1681088292
+      player land 48x48_7: -843062355
+      player land 48x48_8: -1092465632
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

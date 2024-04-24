@@ -123,12 +123,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player jump 48x48_3
+      name: player jump 48x48_0
       rect:
         serializedVersion: 2
-        x: 11
+        x: 5
         y: 4
-        width: 23
+        width: 30
         height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -137,19 +137,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5769979c97bd3034d92629812427c8ef
-      internalID: -1112314957
+      spriteID: 66e03864a8c834c4e9643be974747c1a
+      internalID: 2024238597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player jump 48x48_4
+      name: player jump 48x48_1
       rect:
         serializedVersion: 2
-        x: 56
+        x: 53
         y: 4
-        width: 23
+        width: 30
         height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bd3de292d05c7f439a5178d0296460f
-      internalID: 241211466
+      spriteID: 45eb42b259ecb6240be01fe1b28bb4e3
+      internalID: 61890658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player jump 48x48_5
+      name: player jump 48x48_2
       rect:
         serializedVersion: 2
-        x: 107
-        y: 4
-        width: 23
-        height: 35
+        x: 103
+        y: 5
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04ff9a3078babc741a7b7b9ec9b99ad0
-      internalID: -12038034
+      spriteID: 04f11139c4e1c354285fca4fcc8576e4
+      internalID: -1837184694
       vertices: []
       indices: 
       edges: []
@@ -196,12 +196,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player jump 48x48_0: -523618692
-      player jump 48x48_1: -225349227
-      player jump 48x48_2: 974765453
-      player jump 48x48_3: -1112314957
-      player jump 48x48_4: 241211466
-      player jump 48x48_5: -12038034
+      player jump 48x48_0: 2024238597
+      player jump 48x48_1: 61890658
+      player jump 48x48_2: -1837184694
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
