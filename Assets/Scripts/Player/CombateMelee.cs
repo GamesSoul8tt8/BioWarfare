@@ -6,10 +6,11 @@ public class CombateMelee : MonoBehaviour
 {
     [SerializeField] private Transform controladorGolpe;
     [SerializeField] private float radioGolpe;
-    [SerializeField] private float damageGolpe;
+    private float damageGolpe;
     [SerializeField] private float tiempoAtaques;
     [SerializeField] private float tiempoSiguienteAtaque;
-    private float direccion;
+    [SerializeField] private bool sword;
+    [SerializeField] private bool katana;
     private Animator animator;
 
     private void Start()
@@ -40,13 +41,19 @@ public class CombateMelee : MonoBehaviour
         {
             if(colisionador.CompareTag("Enemy"))
             {
-                if(colisionador.transform.position.x < transform.position.x)
+                if(katana)
                 {
-                    direccion = -1f;
+                    damageGolpe = 30;
                 }else{
-                    direccion = 1f;
+                    if(sword)
+                    {
+                        damageGolpe = 20;
+                    }else
+                    {
+                        damageGolpe = 10;
+                    }
                 }
-                StartCoroutine(colisionador.transform.GetComponent<Enemigo>().TomarDamage(damageGolpe, direccion));
+                colisionador.transform.GetComponent<Enemigo>().TomarDamage(damageGolpe);
             }
         }
     }

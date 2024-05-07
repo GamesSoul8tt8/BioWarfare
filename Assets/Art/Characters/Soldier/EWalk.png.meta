@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dcd451ed649e9d949b44ec8b9610128c
+guid: cba03b0555e0cf34b88d0d3bfb9a51f9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 65
+  spritePixelsToUnits: 48
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_0
+      name: EWalk_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 0
-        width: 25
-        height: 40
+        x: 11
+        y: 8
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c902354cb1ea049499113221660c2080
-      internalID: 1045752076
+      spriteID: 40b1063dc85481e4aa34a6be38168aca
+      internalID: -1887912759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_1
+      name: EWalk_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 0
-        width: 25
-        height: 40
+        x: 59
+        y: 8
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c18ddc02beea33940b925737740e4336
-      internalID: 1075954472
+      spriteID: 45a0f22614eb68c449a6b1b8d31cc2ff
+      internalID: -298632212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_2
+      name: EWalk_2
       rect:
         serializedVersion: 2
-        x: 227
-        y: 0
-        width: 25
-        height: 40
+        x: 106
+        y: 8
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2db022446ffeff468b118e974f6745c
-      internalID: 1961330
+      spriteID: 0bdf811d7d9683a4aa6a4e0adaa09b86
+      internalID: -8119120
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_3
+      name: EWalk_3
       rect:
         serializedVersion: 2
-        x: 324
-        y: 0
-        width: 25
-        height: 40
+        x: 154
+        y: 8
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 318e881f85453eb4fba23ffb49a96110
-      internalID: -1692751048
+      spriteID: b2d0d94a9ca8c374f81bd114c104d41b
+      internalID: -273110095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_4
+      name: EWalk_4
       rect:
         serializedVersion: 2
-        x: 421
-        y: 0
-        width: 25
-        height: 40
+        x: 203
+        y: 8
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c5d3112a08bb53418b5782edb217895
-      internalID: 1565810444
+      spriteID: 738d40a8efaa71a4988fc834a221645f
+      internalID: 595761138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_5
+      name: EWalk_5
       rect:
         serializedVersion: 2
-        x: 516
-        y: 0
-        width: 25
-        height: 40
+        x: 251
+        y: 8
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a96ab129c05e4f4d96b3a6b6509313c
-      internalID: -244753288
+      spriteID: 4409c88263017484c8a4bfae3084028f
+      internalID: 570556637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_6
+      name: EWalk_6
       rect:
         serializedVersion: 2
-        x: 612
-        y: 0
-        width: 25
-        height: 40
+        x: 298
+        y: 8
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,8 +263,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 621d5cc884b6ddc4985c9e5dd11e7cba
-      internalID: 65892134
+      spriteID: 4959aa2fb3d0b0f4d8b2074995d1843a
+      internalID: 802103295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EWalk_7
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 8
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655f527877f594749807f62691a6d90f
+      internalID: 1680282997
       vertices: []
       indices: 
       edges: []
@@ -280,13 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      idle_0: 1045752076
-      idle_1: 1075954472
-      idle_2: 1961330
-      idle_3: -1692751048
-      idle_4: 1565810444
-      idle_5: -244753288
-      idle_6: 65892134
+      EWalk_0: -1887912759
+      EWalk_1: -298632212
+      EWalk_2: -8119120
+      EWalk_3: -273110095
+      EWalk_4: 595761138
+      EWalk_5: 570556637
+      EWalk_6: 802103295
+      EWalk_7: 1680282997
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

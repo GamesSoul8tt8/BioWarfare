@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d09871686fb21014293e6accec512a24
+guid: 9d5db10cb70e5b540b8bba94b06f3fa4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,211 +123,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player Idle 48x48_0
+      name: EDeath_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 8
+        x: 17
+        y: 16
         width: 30
-        height: 40
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bae19f27a3b04574c9bc11e3aa4ba713
-      internalID: 1653838723
+      spriteID: bc4c8aa70488d60468c63ee5d442c234
+      internalID: 2024915532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Idle 48x48_1
+      name: EDeath_1
       rect:
         serializedVersion: 2
-        x: 57
-        y: 8
+        x: 82
+        y: 16
         width: 30
-        height: 40
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f46bea0799f454e4b8bf9a2d5e2acbe5
-      internalID: -121578912
+      spriteID: af710bbecc77dde41b94a437450dd9e2
+      internalID: 2063370815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Idle 48x48_2
+      name: EDeath_2
       rect:
         serializedVersion: 2
-        x: 105
-        y: 8
+        x: 152
+        y: 16
         width: 30
-        height: 40
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7161f582576de3488627ec220144d1d
-      internalID: -316721309
+      spriteID: 93d52d84a46425f439e812f8c313062d
+      internalID: 98793356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Idle 48x48_3
+      name: EDeath_3
       rect:
         serializedVersion: 2
-        x: 153
-        y: 8
+        x: 217
+        y: 16
         width: 30
-        height: 40
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c71ad7edab394c0428ac75847b779e65
-      internalID: -1902252933
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle 48x48_4
-      rect:
-        serializedVersion: 2
-        x: 201
-        y: 8
-        width: 30
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8db41fdd981bb34ab74072b082b5b3d
-      internalID: -1109125557
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle 48x48_5
-      rect:
-        serializedVersion: 2
-        x: 249
-        y: 8
-        width: 30
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cbd8c311a58eadf438907432e9460553
-      internalID: 1449380519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle 48x48_6
-      rect:
-        serializedVersion: 2
-        x: 297
-        y: 8
-        width: 30
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bef1b9f4659613b47ac66a8aa49a52ea
-      internalID: -371468400
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle 48x48_7
-      rect:
-        serializedVersion: 2
-        x: 346
-        y: 8
-        width: 30
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad930f22c98b53c408ad13719ae4467b
-      internalID: -584591977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle 48x48_8
-      rect:
-        serializedVersion: 2
-        x: 392
-        y: 8
-        width: 30
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6912d4121e869974fae02948ce1bf657
-      internalID: 1704408128
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle 48x48_9
-      rect:
-        serializedVersion: 2
-        x: 440
-        y: 8
-        width: 30
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5542e15e1f70c924baac87b163167954
-      internalID: 1062912313
+      spriteID: 204e2f5165d60c349936f859486d4ab5
+      internalID: 143722885
       vertices: []
       indices: 
       edges: []
@@ -343,16 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player Idle 48x48_0: 1653838723
-      Player Idle 48x48_1: -121578912
-      Player Idle 48x48_2: -316721309
-      Player Idle 48x48_3: -1902252933
-      Player Idle 48x48_4: -1109125557
-      Player Idle 48x48_5: 1449380519
-      Player Idle 48x48_6: -371468400
-      Player Idle 48x48_7: -584591977
-      Player Idle 48x48_8: 1704408128
-      Player Idle 48x48_9: 1062912313
+      EDeath_0: 2024915532
+      EDeath_1: 2063370815
+      EDeath_2: 98793356
+      EDeath_3: 143722885
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

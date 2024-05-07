@@ -24,26 +24,16 @@ public class Salud : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void TakeDamage(int damage)
     {
-        if(collision.CompareTag("Enemy") && !invulnerabilidad)
+        if(!invulnerabilidad)
         {
-            salud -= collision.GetComponent<Enemigo>().damageCausado;
-            Debug.Log("Recibiste Daño");
+            salud -= damage;
             StartCoroutine(Invulnerabilidad());
-
-            if(collision.transform.position.x > transform.position.x)
-            {
-                rb.AddForce(new Vector2(-collision.GetComponent<Enemigo>().retrocesoFuerzaX, collision.GetComponent<Enemigo>().retrocesoFuerzaY), ForceMode2D.Force);
-            }
-            else
-            {
-                rb.AddForce(new Vector2(collision.GetComponent<Enemigo>().retrocesoFuerzaX, collision.GetComponent<Enemigo>().retrocesoFuerzaY), ForceMode2D.Force);
-            }
 
             if(salud <= 0)
             {
-                Debug.Log("Has muerto, seras ...");
+                Destroy(gameObject);
             }
         }
     }

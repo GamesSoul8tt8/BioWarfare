@@ -8,18 +8,22 @@ public class SoldierMovement : MonoBehaviour
     private float velocidad;
     Rigidbody2D rb;
     Animator anim;
-    [SerializeField] private bool isStatic;
+    public bool isStatic, isPatrol, isHunting;
 
     public Transform PointA, PointB;
     private bool goA, goB;
-    [SerializeField]private bool shouldWait;
-    [SerializeField]private bool isWaiting;
+    [SerializeField] private bool shouldWait;
+    [SerializeField] private bool isWaiting;
     [SerializeField] private float timeWait;
+    [SerializeField] private bool A;
+    [SerializeField] private Transform jugador;
     
 
     private void Start()
     {
         goA = true;
+        A = true;
+        isPatrol = true;
         velocidad = GetComponent<Enemigo>().velocidad;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -34,31 +38,36 @@ public class SoldierMovement : MonoBehaviour
             rb.constraints = RigidbodyConstraints2D.FreezePositionX;
         }else
         {
-            anim.SetBool("Static", false);
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-            if(goA)
+            if(isPatrol)
             {
-                if(!isWaiting)
+                anim.SetBool("Static", false);
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+                if(goA)
                 {
-                    anim.SetBool("Static", false);
-                    rb.velocity = new Vector2(velocidad * Time.deltaTime, rb.velocity.y);
-                }
-
-
-                if (Vector2.Distance(transform.position, PointA.position) < 0.2f)
-                {
-                    shouldWait = true;
-
-                    if(shouldWait)
+                    if(!isWaiting)
                     {
-                        StartCoroutine(Waiting());
+                        anim.SetBool("Static", false);
+                        rb.velocity = new Vector2(velocidad * Time.deltaTime, rb.velocity.y);
                     }
 
-                    goA = false;
-                    goB = true;
+
+                    if (Vector2.Distance(transform.position, PointA.position) < 0.2f)
+                    {
+                        shouldWait = true;
+
+                        A = false;
+
+                        if(shouldWait)
+                        {
+                            StartCoroutine(Waiting());
+                        }
+
+                        goA = false;
+                        goB = true;
+                    }
                 }
-            }
-            if(goB)
+                if(goB)
             {
                 if(!isWaiting)
                 {
@@ -70,6 +79,8 @@ public class SoldierMovement : MonoBehaviour
                 {
                     shouldWait = true;
 
+                    A = true;
+
                     if(shouldWait)
                     {
                         StartCoroutine(Waiting());
@@ -79,6 +90,13 @@ public class SoldierMovement : MonoBehaviour
                     goB = false;
                 }
             }
+            }if(isHunting)
+            {
+                anim.SetBool("Static", true);
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+                Debug.Log("Alerta");
+            }
         }
     }
 
@@ -86,6 +104,7 @@ public class SoldierMovement : MonoBehaviour
     {
         anim.SetBool("Static", true);
         isStatic = true;
+        isPatrol = false;
         isWaiting = true;
 
         yield return new WaitForSeconds(timeWait);
@@ -93,10 +112,17 @@ public class SoldierMovement : MonoBehaviour
         Flip();
         anim.SetBool("Static", false);
         isStatic = false;
+        isPatrol = true;
         isWaiting = false;
     }
 
     private void Flip(){
-        transform.localScale = new Vector2(-1*transform.localScale.x, transform.localScale.y);
+        float angulo = A ? 0f : 180f;
+        transform.rotation = Quaternion.Euler(0, angulo, 0);
+    }
+
+    public void FlipHunt()
+    {
+        transform.rotation = Quaternion.Euler(0, transform.eulerAngles.y+180, 0);
     }
 }

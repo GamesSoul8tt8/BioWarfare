@@ -8,30 +8,28 @@ public class Enemigo : MonoBehaviour
     [SerializeField] private float vida;
     public float damageCausado;
     public float velocidad;
-    [SerializeField] private float fuerzaRetrocesoX;
-    [SerializeField] private float fuerzaRetrocesoY;
     [SerializeField] private float duracionRetroceso;
+    
     // Varaibles que afectan al Jugador
     public float retrocesoFuerzaX; 
     public float retrocesoFuerzaY;
 
     Rigidbody2D rb;
+    Animator anim;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public IEnumerator TomarDamage(float damage, float direccion)
+    public void TomarDamage(float damage)
     {
         vida -= damage;
         if (vida <= 0)
         {
             Muerte();
         }else{
-            rb.AddForce(new Vector2(direccion*fuerzaRetrocesoX, fuerzaRetrocesoY), ForceMode2D.Force);
-            yield return new WaitForSeconds(duracionRetroceso);
-            rb.AddForce(new Vector2(-direccion*fuerzaRetrocesoX, -fuerzaRetrocesoY), ForceMode2D.Force);
+            Debug.Log(damage);
         }
     }
 

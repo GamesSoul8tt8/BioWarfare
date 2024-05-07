@@ -41,7 +41,7 @@ public class MovimientoPersonaje : MonoBehaviour
     [SerializeField] private float radioTecho;
     [SerializeField] private float multiplicadorVelAgachado;
     private CapsuleCollider2D colisionador;
-    private bool agachar = false;
+    public bool agachar = false;
     private float alturaOriginalColisionador;
     private Vector2 centroOriginal;
     [SerializeField] private float reduccionColisionador;
@@ -52,6 +52,8 @@ public class MovimientoPersonaje : MonoBehaviour
     private float gravedadInicial;
     private bool puedeHacerDash = true;
     private bool sePuedeMover = true;
+
+    private Salud salud;
 
     [Header("Escaleras")]
     [SerializeField] private float velocidadEscalar;
@@ -102,7 +104,7 @@ public class MovimientoPersonaje : MonoBehaviour
                 //colisionador.size = new Vector2(colisionador.size.x, colisionador.size.y / reduccionColisionador);
                 //colisionador.offset = new Vector2(centroOriginal.x, -colisionador.size.y / reduccionColisionador);
                 colisionador.size = new Vector2(colisionador.size.x, 0.4f);
-                colisionador.offset = new Vector2(centroOriginal.x, -0.1f);
+                colisionador.offset = new Vector2(centroOriginal.x, -0.21f);
             }else
             {
                 if (Physics2D.OverlapCircle(controladorTecho.position, radioTecho, esSuelo))
@@ -210,7 +212,7 @@ public class MovimientoPersonaje : MonoBehaviour
         puedeHacerDash = false;
         rb2D.velocity = new Vector2(velocidadDash * transform.localScale.x, 0);
         colisionador.size = new Vector2(colisionador.size.x, 0.275f);
-        colisionador.offset = new Vector2(centroOriginal.x, -0.175f);
+        colisionador.offset = new Vector2(centroOriginal.x, -0.28f);
         animator.SetTrigger("Dash");
 
         yield return new WaitForSeconds(tiempoDash);
