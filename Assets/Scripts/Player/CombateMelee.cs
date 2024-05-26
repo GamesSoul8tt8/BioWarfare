@@ -12,6 +12,8 @@ public class CombateMelee : MonoBehaviour
     [SerializeField] private bool sword;
     [SerializeField] private bool katana;
     private Animator animator;
+    [SerializeField] private bool locked;
+    [SerializeField] AudioClip punch, Enemydamage;
 
     private void Start()
     {
@@ -20,20 +22,37 @@ public class CombateMelee : MonoBehaviour
 
     private void Update()
     {
+        locked =  GetComponent<MovimientoPersonaje>().notAttack;
         if (tiempoSiguienteAtaque > 0)
         {
             tiempoSiguienteAtaque -= Time.deltaTime;
         }
 
-        if (Input.GetButtonDown("Fire1") && tiempoSiguienteAtaque <= 0)
+        if (!locked)
         {
-            Golpe();
-            tiempoSiguienteAtaque = tiempoAtaques;
+            if (Input.GetButtonDown("Fire1") && tiempoSiguienteAtaque <= 0)
+            {
+                Golpe();
+                tiempoSiguienteAtaque = tiempoAtaques;
+            }
         }
     }
 
     private void Golpe()
     {
+        if(katana)
+        {
+
+        }else
+        {
+            if(sword)
+            {
+
+            }else
+            {
+                ControladorSonidos.Instance.EjecutarSonido(punch);
+            }
+        }
         animator.SetTrigger("Golpe");
         Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, radioGolpe);
 

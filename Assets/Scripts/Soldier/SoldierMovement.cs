@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class SoldierMovement : MonoBehaviour
@@ -17,6 +16,9 @@ public class SoldierMovement : MonoBehaviour
     [SerializeField] private float timeWait;
     [SerializeField] private bool A;
     [SerializeField] private Transform jugador;
+    private bool aturdido;
+    private AudioSource audioSource;
+
     
 
     private void Start()
@@ -27,15 +29,20 @@ public class SoldierMovement : MonoBehaviour
         velocidad = GetComponent<Enemigo>().velocidad;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
     {
+        if (audioSource != null)
+        {
+            audioSource.mute = !isPatrol;
+        }
+        aturdido = GetComponent<Enemigo>().stun;
         if(isStatic)
         {
             anim.SetBool("Static", true);
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-            rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
         }else
         {
             if(isPatrol)
@@ -93,9 +100,13 @@ public class SoldierMovement : MonoBehaviour
             }if(isHunting)
             {
                 anim.SetBool("Static", true);
-                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-                rb.constraints = RigidbodyConstraints2D.FreezePositionX;
-                Debug.Log("Alerta");
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
+            }
+
+            if(aturdido)
+            {
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
+                Debug.Log("Aturdido");
             }
         }
     }
@@ -123,6 +134,9 @@ public class SoldierMovement : MonoBehaviour
 
     public void FlipHunt()
     {
-        transform.rotation = Quaternion.Euler(0, transform.eulerAngles.y+180, 0);
+        if(!aturdido)
+        {
+            transform.rotation = Quaternion.Euler(0, transform.eulerAngles.y+180, 0);
+        }
     }
 }

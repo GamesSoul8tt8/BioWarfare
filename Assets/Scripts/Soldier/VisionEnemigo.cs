@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class VisionEnemigo : MonoBehaviour
@@ -22,6 +21,8 @@ public class VisionEnemigo : MonoBehaviour
     private bool atacando;
     private SoldierMovement ataque_var;
     private GameObject jugador;
+    private bool aturdido, moridos;
+    [SerializeField] private AudioClip shoot;
 
     private void Start()
     {
@@ -31,43 +32,49 @@ public class VisionEnemigo : MonoBehaviour
     private void Update()
     {
         atacando = GetComponent<SoldierMovement>().isHunting;
+        aturdido = GetComponent<Enemigo>().stun;
+        moridos = GetComponent<Enemigo>().morido;
         if (jugador != null)
         {
             MovimientoPersonaje movimientoJugador = jugador.GetComponent<MovimientoPersonaje>();
             jugadorRangoDisparo = Physics2D.OverlapBox(controladorAtaque.position, dimensionesAtaque, 0f, capaJugador);
             jugadorEspalda = Physics2D.OverlapBox(controladorVision.position, dimensionesVision, 0f, capaJugador);
 
-            if(movimientoJugador != null && !movimientoJugador.agachar && !atacando)
+            
+            if((!movimientoJugador.agachar && !atacando && jugadorEspalda) || jugadorRangoDisparo && !atacando)
             {
-                if(jugadorEspalda || jugadorRangoDisparo)
-                {
-                    Debug.Log("Visualizado");
-                    ataque_var.isStatic = false;
-                    ataque_var.isPatrol = false;
-                    ataque_var.isHunting = true;
-                }
+                Deteccion();
             }
             if(atacando)
             {
                 jugadorRangoMelee = Physics2D.OverlapBox(controladorMelee.position, dimensionesMelee, 0f, capaJugador);
-                if(jugadorRangoMelee)
+                Debug.Log(movimientoJugador.muerto);
+                if(!moridos)
                 {
-                    Debug.Log("Melee");
-                }else
-                {
-                    if(jugadorRangoDisparo)
+                    if(!movimientoJugador.muerto)
                     {
-                        if (Time.time > tiempoEntreDisparo + tiempoUltimoDisparo)
+                        if(!aturdido)
                         {
-                            tiempoUltimoDisparo = Time.time;
-                            Invoke(nameof(Disparar), tiempoEsperaDisparo);
+                            if(jugadorRangoMelee)
+                            {
+                                Debug.Log("Melee");
+                            }else
+                            {
+                                if(jugadorRangoDisparo)
+                                {
+                                    if (Time.time > tiempoEntreDisparo + tiempoUltimoDisparo)
+                                    {
+                                        tiempoUltimoDisparo = Time.time;
+                                        Invoke(nameof(Disparar), tiempoEsperaDisparo);
+                                    }
+                                }
+                            }
                         }
                     }
-                }
-
-                if(jugadorEspalda)
-                {
-                    ataque_var.FlipHunt();
+                    if(jugadorEspalda)
+                    {
+                        ataque_var.FlipHunt();
+                    }
                 }
             }
         }
@@ -75,6 +82,7 @@ public class VisionEnemigo : MonoBehaviour
 
     private void Disparar()
     {
+        ControladorSonidos.Instance.EjecutarSonido(shoot);
         Instantiate(bala, controladordisparo.position, controladordisparo.rotation);
     }
     private void OnDrawGizmos()
@@ -84,4 +92,12 @@ public class VisionEnemigo : MonoBehaviour
         Gizmos.DrawWireCube(controladorAtaque.position, dimensionesAtaque);
         Gizmos.DrawWireCube(controladorMelee.position, dimensionesMelee);
     }
+
+    private void Deteccion()
+    {
+        ataque_var.isStatic = false;
+        ataque_var.isPatrol = false;
+        ataque_var.isHunting = true;
+    }
+
 }

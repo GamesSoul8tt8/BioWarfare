@@ -6,8 +6,11 @@ public class MovimientoPersonaje : MonoBehaviour
 {
     private Rigidbody2D rb2D;
 
+    public bool notAttack;
+    [SerializeField] private AudioClip run, jump, wallSlide, crouch, dash;
+
     [Header("Movimiento")]
-    private Vector2 input;
+    [SerializeField] private Vector2 input;
     private float movimientoHorizontal = 0f;
     [SerializeField]private float velocidadMovimiento;
     [Range(0, 0.3f)][SerializeField]private float suavizadoMovimiento;
@@ -53,11 +56,11 @@ public class MovimientoPersonaje : MonoBehaviour
     private bool puedeHacerDash = true;
     private bool sePuedeMover = true;
 
-    private Salud salud;
-
     [Header("Escaleras")]
     [SerializeField] private float velocidadEscalar;
-    private bool escalando;
+    [SerializeField] private bool escalando;
+    public bool puedeBajar;
+    public bool muerto;
 
     
     private void Start()
@@ -76,12 +79,30 @@ public class MovimientoPersonaje : MonoBehaviour
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
         movimientoHorizontal = input.x * velocidadMovimiento;
+
+        if(input.x != 0 && enSuelo && !agachar)
+        {
+            ControladorSonidos.Instance.ReproducirSonidoEnLoop(run);
+        }
+        else if(input.x != 0 && enSuelo)
+        {
+            ControladorSonidos.Instance.ReproducirSonidoEnLoop(crouch);
+        }
+        else if(deslizando)
+        {
+            ControladorSonidos.Instance.ReproducirSonidoEnLoop(wallSlide);
+        }
+        else
+        {
+            ControladorSonidos.Instance.DetenerSonidoEnLoop();
+        }
         
         animator.SetFloat("Horizontal", Mathf.Abs(movimientoHorizontal));
         animator.SetFloat("SpeedY", rb2D.velocity.y);
         animator.SetBool("Deslizando", deslizando);
 
         if (Input.GetButtonDown("Jump")){
+            Debug.Log("Salto");
             salto = true;
         }
 
@@ -146,6 +167,31 @@ public class MovimientoPersonaje : MonoBehaviour
         if (deslizando)
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, Mathf.Clamp(rb2D.velocity.y, - velocidadDeslizar, float.MaxValue));
+            Debug.Log("SonandoWall");
+            ControladorSonidos.Instance.ReproducirSonidoEnLoop(wallSlide);
+        }
+
+        if (colisionador.IsTouchingLayers(LayerMask.GetMask("LadderTop")))
+        {
+            puedeBajar = true;
+        }
+
+        if(input.y < 0 && puedeBajar)
+        {
+            Debug.Log("Baja");
+            DesactivarColision();
+        }
+
+        muerto = GetComponent<Salud>().dead;
+
+        if(muerto)
+        {
+            Moricion();
+        }
+
+        if(Input.GetButtonDown("Jump") && escalando)
+        {
+            Salto();
         }
     }
 
@@ -202,7 +248,11 @@ public class MovimientoPersonaje : MonoBehaviour
 
     private void Salto()
     {
+        ControladorSonidos.Instance.EjecutarSonido(jump);
         enSuelo = false;
+        escalando = false;
+        rb2D.gravityScale = gravedadInicial;
+        notAttack = false;
         rb2D.AddForce(new Vector2(0f, fuerzaSalto));
     }
 
@@ -213,6 +263,7 @@ public class MovimientoPersonaje : MonoBehaviour
         rb2D.velocity = new Vector2(velocidadDash * transform.localScale.x, 0);
         colisionador.size = new Vector2(colisionador.size.x, 0.275f);
         colisionador.offset = new Vector2(centroOriginal.x, -0.28f);
+        ControladorSonidos.Instance.EjecutarSonido(dash);
         animator.SetTrigger("Dash");
 
         yield return new WaitForSeconds(tiempoDash);
@@ -234,16 +285,21 @@ public class MovimientoPersonaje : MonoBehaviour
 
     private void Escalar()
     {
-        if(colisionador.IsTouchingLayers(LayerMask.GetMask("Ladder")) && (input.y !=0 || escalando))
+        if(colisionador.IsTouchingLayers(LayerMask.GetMask("Ladder")) && (input.y !=0 || escalando) && !agachar)
         {
-            Debug.Log("Escalera");
             Vector2 velocidadSubida = new Vector2(rb2D.velocity.x, input.y * velocidadEscalar);
             rb2D.velocity = velocidadSubida;
             rb2D.gravityScale = 0;
             escalando = true;
-        }else{
+            notAttack = true;
+            rb2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+
+        }else
+        {
             rb2D.gravityScale = gravedadInicial;
             escalando = false;
+            notAttack = false;
+            rb2D.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
 
         if(enSuelo)
@@ -256,10 +312,32 @@ public class MovimientoPersonaje : MonoBehaviour
 
     private void Girar()
     {
-        mirandoDerecha = !mirandoDerecha;
-        Vector3 escala = transform.localScale;
-        escala.x *= -1;
-        transform.localScale = escala;
+        if(!muerto)
+        {
+            mirandoDerecha = !mirandoDerecha;
+            Vector3 escala = transform.localScale;
+            escala.x *= -1;
+            transform.localScale = escala;
+        }
+    }
+
+    private void DesactivarColision()
+    {
+        Collider2D[] objetos = Physics2D.OverlapBoxAll(controladorSuelo.position, dimensionesCaja, 0f, esSuelo);
+        foreach (Collider2D item in objetos)
+        {
+            PlatformEffector2D platformEffector = item.GetComponent<PlatformEffector2D>();
+            if (platformEffector != null)
+            {
+                Physics2D.IgnoreCollision(GetComponent<Collider2D>(), item.GetComponent<Collider2D>(), true);
+            }
+        }
+    }
+
+    private void Moricion()
+    {
+        rb2D.constraints = RigidbodyConstraints2D.FreezeAll;
+        animator.SetTrigger("Death");
     }
 
     private void OnDrawGizmos()
